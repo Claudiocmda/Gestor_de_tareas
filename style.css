@@ -1,0 +1,203 @@
+/* Fuente general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 30px;
+  color: #333;
+}
+
+/* Layout principal */
+.main-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Contenedor principal */
+.container {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+}
+
+/* Título */
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #2e7d32;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #388e3c;
+}
+
+/* Lista de tareas */
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#taskList li {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: background 0.3s ease;
+}
+
+#taskList li:hover {
+  background: #e8f5e9;
+}
+
+#taskList button {
+  background-color: #e57373;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#taskList button:hover {
+  background-color: #d32f2f;
+}
+
+/* Botones adicionales */
+#exportBtn,
+#sugerirBtn {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-right: 10px;
+  transition: background 0.3s ease;
+}
+
+#exportBtn:hover,
+#sugerirBtn:hover {
+  background-color: #1976d2;
+}
+
+/* Sugerencias de usuarios */
+#sugerenciasContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.usuario-card {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 160px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.usuario-card:hover {
+  transform: scale(1.05);
+}
+
+.usuario-card img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.usuario-card h3 {
+  font-size: 1em;
+  margin: 5px 0;
+  color: #333;
+}
+
+.usuario-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+
+
+
+/* Layout general */
+.main-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Contenido principal */
+.app-content {
+  flex: 2;
+}
+
+/* Caja de motivación */
+#motivacionBox {
+  flex: 1;
+  background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 20px;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+#motivacionBox:hover {
+  transform: scale(1.02);
+}
+
+#motivacionBox h2 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #00796b;
+}
+
+#fraseMotivacional {
+  font-style: italic;
+  color: #2e7d32;
+  font-size: 1.1em;
+  line-height: 1.4;
+}
